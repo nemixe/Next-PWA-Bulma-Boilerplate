@@ -1,3 +1,4 @@
+workbox.setConfig({ debug: false })
 workbox.core.setCacheNameDetails({ prefix: 'next-ss' })
 
 workbox.skipWaiting()

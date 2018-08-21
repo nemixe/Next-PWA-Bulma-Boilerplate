@@ -13,7 +13,7 @@ class Index extends React.Component {
 
 	fetchData() {
 		return this.props.stories.map(story => {
-			return <li key={story.id}>{story.title}</li>
+			return <li key={story.id}><a href={story.url}>{story.title}</a></li>
 		})
 	}
 

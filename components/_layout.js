@@ -1,7 +1,6 @@
 import 'isomorphic-fetch'
 import Head from 'next/head'
 import styles from '../styles/styles.scss'
-import Navbar from './Navbar';
 
 export default class extends React.Component {
   render() {
@@ -16,8 +15,9 @@ export default class extends React.Component {
           <link rel="manifest" href="static/manifest.json" />
           <link rel="icon" href="static/img/favicon.ico" />
         </Head>
+
         <style dangerouslySetInnerHTML={{ __html: styles }} />
-        <Navbar />
+
         {this.props.children}
       </div>
     )
