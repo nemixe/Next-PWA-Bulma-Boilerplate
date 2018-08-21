@@ -1,5 +1,3 @@
-import React from 'react'
-
 export default ({ todo, remove }) => {
 	return (
 		<li style={{ listStyle: 'none' }}>
